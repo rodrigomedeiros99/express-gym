@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { DayPicker } from "react-day-picker";
-import { Calendar, Clock, User, Mail, Phone } from "lucide-react";
+import { Clock, User, Mail, Phone } from "lucide-react";
 import "react-day-picker/dist/style.css";
 import { clsx } from "clsx";
 
