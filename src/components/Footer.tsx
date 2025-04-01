@@ -1,12 +1,8 @@
 "use client";
 import Link from "next/link";
-import { Dumbbell, Facebook, Instagram, Twitter, ArrowUp } from "lucide-react";
+import { Dumbbell, Facebook, Instagram, Twitter } from "lucide-react";
 
 export default function Footer() {
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
     <footer className="bg-gray-900 text-white pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -104,13 +100,6 @@ export default function Footer() {
           <p className="text-gray-400 text-sm">
             © {new Date().getFullYear()} Cyber Express. All rights reserved.
           </p>
-          <button
-            onClick={scrollToTop}
-            className="mt-4 md:mt-0 bg-gray-800 p-3 rounded-full hover:bg-gray-700 transition-colors"
-            aria-label="Scroll to top"
-          >
-            <ArrowUp className="w-5 h-5" />
-          </button>
         </div>
       </div>
     </footer>

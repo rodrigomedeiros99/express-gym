@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import BackToTop from "@/components/BackToTop";
 import Contact from "@/components/Contact";
 import FAQ from "@/components/FAQ";
 import Gallery from "@/components/Gallery";
@@ -14,6 +15,7 @@ export default function Home() {
       <Pricing />
       <FAQ />
       <Contact />
+      <BackToTop/>
     </main>
   );
 }
