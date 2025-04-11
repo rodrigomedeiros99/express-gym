@@ -42,7 +42,7 @@ export default function Hero() {
       </div>
       <button
         onClick={scrollToAbout}
-        className="absolute bottom-16  left-1/2 -translate-x-1/2 text-white hover:text-rose-600 transition-colors animate-bounce cursor-pointer"
+        className="absolute bottom-20 sm:bottom-16  left-1/2 -translate-x-1/2 text-white hover:text-rose-600 transition-colors animate-bounce cursor-pointer"
         aria-label="Scroll to About section"
       >
         <ChevronDown className="w-10 h-10" />
