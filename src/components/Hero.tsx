@@ -17,7 +17,7 @@ export default function Hero() {
         <div data-aos="fade-up" className="max-w-3xl">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Transform Your Body at{" "}
-            <span className="text-rose-600">Express Gym</span>
+            <span className="text-red-500">Express Gym</span>
           </h1>
           <p className="text-xl mb-8 text-gray-300">
             Join the future of fitness. State-of-the-art equipment, expert
@@ -26,7 +26,7 @@ export default function Hero() {
           </p>
           <Link
             href="/appointment"
-            className="bg-rose-600 text-black px-8 py-3 rounded-md text-lg font-semibold flex items-center hover:bg-gray-400 transition-colors w-fit"
+            className="bg-red-500 text-black px-8 py-3 rounded-md text-lg font-semibold flex items-center hover:bg-gray-600 hover:text-white transition-colors w-fit"
           >
             Start Your Journey
             <ArrowRight className="ml-2" />

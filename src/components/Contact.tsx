@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 export default function Contact() {
   return (
@@ -15,7 +15,7 @@ export default function Contact() {
           <div data-aos="fade-right">
             <div className="aspect-video rounded-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9916256937595!2d2.2922926!3d48.8583736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sEiffel%20Tower!5e0!3m2!1sen!2sfr!4v1647544555647!5m2!1sen!2sfr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3061.5135398711695!2d-83.4501311233817!3d39.8851331878216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8838af31859970b7%3A0x68babad55db9cda6!2sXpress%20Fitness!5e0!3m2!1spt-BR!2sus!4v1744376614356!5m2!1spt-BR!2sus"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -28,15 +28,19 @@ export default function Contact() {
 
           <div data-aos="fade-left" className="space-y-8">
             <div className="flex items-start space-x-4">
-              <MapPin className="w-6 h-6 text-red-600 flex-shrink-0" />
+              <MapPin className="w-6 h-6 text-red-500 flex-shrink-0" />
               <div>
                 <h3 className="font-semibold mb-1">Location</h3>
-                <p className="text-gray-400">123 Fitness Street<br />New York, NY 10001</p>
+                <p className="text-gray-400">
+                  123 Fitness Street
+                  <br />
+                  New York, NY 10001
+                </p>
               </div>
             </div>
 
             <div className="flex items-start space-x-4">
-              <Phone className="w-6 h-6 text-red-600 flex-shrink-0" />
+              <Phone className="w-6 h-6 text-red-500 flex-shrink-0" />
               <div>
                 <h3 className="font-semibold mb-1">Phone</h3>
                 <p className="text-gray-400">(555) 123-4567</p>
@@ -44,7 +48,7 @@ export default function Contact() {
             </div>
 
             <div className="flex items-start space-x-4">
-              <Mail className="w-6 h-6 text-red-600 flex-shrink-0" />
+              <Mail className="w-6 h-6 text-red-500 flex-shrink-0" />
               <div>
                 <h3 className="font-semibold mb-1">Email</h3>
                 <p className="text-gray-400">info@cyberexpress.com</p>
@@ -52,10 +56,14 @@ export default function Contact() {
             </div>
 
             <div className="flex items-start space-x-4">
-              <Clock className="w-6 h-6 text-red-600 flex-shrink-0" />
+              <Clock className="w-6 h-6 text-red-500 flex-shrink-0" />
               <div>
                 <h3 className="font-semibold mb-1">Hours</h3>
-                <p className="text-gray-400">Open 24/7 for Members<br />Staff Hours: 6:00 AM - 10:00 PM</p>
+                <p className="text-gray-400">
+                  Open 24/7 for Members
+                  <br />
+                  Staff Hours: 6:00 AM - 10:00 PM
+                </p>
               </div>
             </div>
           </div>

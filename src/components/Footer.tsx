@@ -4,12 +4,12 @@ import { Dumbbell, Facebook, Instagram, Twitter } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white pt-20 pb-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-gray-900 text-white pt-20 pb-10 ">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div>
             <div className="flex items-center mb-4">
-              <Dumbbell className="h-8 w-8 text-red-600" />
+              <Dumbbell className="h-8 w-8 text-red-500" />
               <span className="ml-2 text-xl font-bold">Cyber Express</span>
             </div>
             <p className="text-gray-400">
@@ -95,11 +95,12 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">
-            © {new Date().getFullYear()} Cyber Express. All rights reserved.
-          </p>
+        <div className="border-t border-gray-800 flex items-center justify-center">
+          <div className=" pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-400 text-sm">
+              © {new Date().getFullYear()} Cyber Express. All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
     </footer>

@@ -38,7 +38,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center">
-            <Dumbbell className="h-8 w-8 text-rose-600" />
+            <Dumbbell className="h-8 w-8 text-red-500" />
             <span className="ml-2 text-xl font-bold text-white">
               Express Gym
             </span>
@@ -48,25 +48,25 @@ export default function Navbar() {
             <div className="hidden md:flex space-x-8">
               <button
                 onClick={() => scrollToSection("home")}
-                className="text-gray-300 hover:text-rose-600 transition-colors"
+                className="text-gray-300 hover:text-red-500 transition-colors cursor-pointer"
               >
                 Home
               </button>
               <button
                 onClick={() => scrollToSection("about")}
-                className="text-gray-300 hover:text-rose-600 transition-colors"
+                className="text-gray-300 hover:text-rose-600 transition-colors cursor-pointer"
               >
                 About
               </button>
               <button
                 onClick={() => scrollToSection("gallery")}
-                className="text-gray-300 hover:text-rose-600 transition-colors"
+                className="text-gray-300 hover:text-rose-600 transition-colors cursor-pointer"
               >
                 Gallery
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-gray-300 hover:text-rose-600 transition-colors"
+                className="text-gray-300 hover:text-rose-600 transition-colors cursor-pointer"
               >
                 Contact
               </button>
@@ -75,7 +75,7 @@ export default function Navbar() {
 
           <Link
             href="/appointment"
-            className="bg-rose-600 text-white px-6 py-2 rounded-md hover:bg-gray-600 transition-colors"
+            className="bg-red-500 text-white px-6 py-2 rounded-md hover:bg-gray-600 transition-colors"
           >
             Join Now
           </Link>
