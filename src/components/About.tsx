@@ -43,7 +43,7 @@ export default function About() {
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
-              <feature.icon className="w-12 h-12 mx-auto mb-4 text-red-500" />
+              <feature.icon className="w-12 h-12 mx-auto mb-4 text-rose-600" />
               <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
               <p className="text-gray-400">{feature.description}</p>
             </div>
