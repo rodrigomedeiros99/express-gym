@@ -1,7 +1,14 @@
-import { ArrowRight } from "lucide-react";
+"use client";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import Link from "next/link";
 
 export default function Hero() {
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById("about");
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section id="home" className="relative h-screen flex items-center ">
       <div className="absolute inset-0 z-0  ">
@@ -10,7 +17,7 @@ export default function Hero() {
           alt="Gym Interior"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-linear-to-b from-gray-900/90 to-transparent " />
+        <div className="absolute inset-0 bg-black/60 " />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,6 +40,13 @@ export default function Hero() {
           </Link>
         </div>
       </div>
+      <button
+        onClick={scrollToAbout}
+        className="absolute bottom-16  left-1/2 -translate-x-1/2 text-white hover:text-rose-600 transition-colors animate-bounce cursor-pointer"
+        aria-label="Scroll to About section"
+      >
+        <ChevronDown className="w-10 h-10" />
+      </button>
     </section>
   );
 }
