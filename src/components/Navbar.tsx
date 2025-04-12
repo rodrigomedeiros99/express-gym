@@ -60,25 +60,25 @@ export default function Navbar() {
             <div className="hidden md:flex space-x-8">
               <button
                 onClick={() => scrollToSection("home")}
-                className="text-gray-300 hover:text-red-500 transition-colors cursor-pointer font-semibold"
+                className="text-gray-300 hover:text-red-500 transition-colors cursor-pointer font-semibold  "
               >
                 Home
               </button>
               <button
                 onClick={() => scrollToSection("about")}
-                className="text-gray-300 hover:text-rose-600 transition-colors cursor-pointer font-semibold"
+                className="text-gray-300 hover:text-rose-600 transition-colors cursor-pointer font-semibold "
               >
                 About
               </button>
               <button
                 onClick={() => scrollToSection("gallery")}
-                className="text-gray-300 hover:text-rose-600 transition-colors cursor-pointer font-semibold"
+                className="text-gray-300 hover:text-rose-600 transition-colors cursor-pointer font-semibold "
               >
                 Gallery
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-gray-300 hover:text-rose-600 transition-colors cursor-pointer font-semibold"
+                className="text-gray-300 hover:text-rose-600 transition-colors cursor-pointer font-semibold "
               >
                 Contact
               </button>
@@ -87,7 +87,7 @@ export default function Navbar() {
 
           <Link
             href="/appointment"
-            className="bg-rose-600 text-white px-6 py-2 rounded-md hover:bg-gray-600  transition-all transform  duration-300   ease-in-out hover:scale-110"
+            className="hidden sm:flex bg-rose-600 text-white px-6 py-2 rounded-md hover:bg-gray-600  transition-all transform  duration-300   ease-in-out hover:scale-110"
           >
             Join Now
           </Link>
@@ -99,7 +99,7 @@ export default function Navbar() {
             {isMobileMenuOpen ? (
               <X className="h-6 w-6" />
             ) : (
-              <Menu className="h-6 w-6" />
+              <Menu className="h-8 w-8" />
             )}
           </button>
         </div>
@@ -138,33 +138,33 @@ export default function Navbar() {
             <div className="flex flex-col space-y-4">
               <button
                 onClick={() => scrollToSection("home")}
-                className="flex items-center text-lg text-gray-300 hover:text-cyan-500 transition-colors"
+                className="flex items-center text-lg text-gray-300 hover:text-red-600 transition-colors"
               >
-                <span className="border-b-2 border-transparent hover:border-cyan-500 pb-1">
+                <span className="border-b-2 border-transparent hover:border-red-600 pb-1">
                   Home
                 </span>
               </button>
               <button
                 onClick={() => scrollToSection("about")}
-                className="flex items-center text-lg text-gray-300 hover:text-cyan-500 transition-colors"
+                className="flex items-center text-lg text-gray-300 hover:text-red-600 transition-colors"
               >
-                <span className="border-b-2 border-transparent hover:border-cyan-500 pb-1">
+                <span className="border-b-2 border-transparent hover:border-red-600 pb-1">
                   About
                 </span>
               </button>
               <button
                 onClick={() => scrollToSection("gallery")}
-                className="flex items-center text-lg text-gray-300 hover:text-cyan-500 transition-colors"
+                className="flex items-center text-lg text-gray-300 hover:text-red-600 transition-colors"
               >
-                <span className="border-b-2 border-transparent hover:border-cyan-500 pb-1">
+                <span className="border-b-2 border-transparent hover:border-red-600 pb-1">
                   Gallery
                 </span>
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="flex items-center text-lg text-gray-300 hover:text-cyan-500 transition-colors"
+                className="flex items-center text-lg text-gray-300 hover:text-red-600 transition-colors"
               >
-                <span className="border-b-2 border-transparent hover:border-cyan-500 pb-1">
+                <span className="border-b-2 border-transparent hover:border-red-600 pb-1">
                   Contact
                 </span>
               </button>
@@ -176,7 +176,7 @@ export default function Navbar() {
             <Link
               href="/appointment"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block w-full bg-rose-600 text-white text-center px-6 py-2 rounded-md hover:bg-cyan-600 transition-colors"
+              className="block w-full bg-rose-600 text-white text-center px-6 py-2 rounded-md hover:bg-gray-600 transition-colors"
             >
               Join Now
             </Link>
